@@ -31,7 +31,7 @@ docker image ls
 3. Uruchom obraz Dockera
 docker run --rm -d -p 5010:8010 --name demo1 demo 
 4. Połącz się z kontenerem
-docker exec -it "<CONTAINER ID>" /bin/bash
+docker exec -it "CONTAINER ID" /bin/bash
 
 
 linki:
