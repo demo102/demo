@@ -29,9 +29,13 @@ docker build -t demo .
 2. Zweryfikuj czy się zbudowało
 docker image ls
 3. Uruchom obraz Dockera
-docker run --rm -d -p 5010:8010 --name demo1 demo 
+a) docker run demo 
+b) docker run --rm -d -p 5010:8010 --name demo1 demo 
 4. Połącz się z kontenerem
-docker exec -it "CONTAINER ID" /bin/bash
+docker exec -it demo1 /bin/bash
+5. Posprzątaj
+a) kontner docker rm -f demo1
+b) obraz docker rmi -f demo
 
 
 linki:
