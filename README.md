@@ -7,8 +7,8 @@ Demo aplikacji Spring Boot i kontenera Docker
 
 ## Prerekwizyty
 
-1. Java SE Development Kit 8 Downloads https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
-![](/images/jdk1.png)
+1. Java SE Development Kit 8 Downloads https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html  
+![](/images/jdk1.png)  
 2. Apache Maven - https://maven.apache.org/download.cgi
 3. Docker Community Edition (CE) https://store.docker.com/search?offering=community&type=edition
 4. Edytor kodu - opcjonalnie
