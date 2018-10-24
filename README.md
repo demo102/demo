@@ -108,6 +108,35 @@ mvn spring-boot:run
 			<artifactId>spring-boot-starter-actuator</artifactId>
 	</dependency>
 ```
+Dopisać w application.properties:  
+```
+management.endpoints.web.exposure.include=*  
+management.endpoint.health.show-details=always
+```  
+
+http://localhost:7060/actuator  
+http://localhost:7060/actuator/threaddump 
+
+http://localhost:7060/actuator/health  
+```
+{
+  "status": "UP",
+  "details": {
+    "diskSpace": {
+      "status": "UP",
+      "details": {
+        "total": 126607159296,
+        "free": 65025572864,
+        "threshold": 10485760
+      }
+    }
+  }
+}
+```
+https://docs.spring.io/spring-boot/docs/current/api/org/springframework/boot/actuate/system/DiskSpaceHealthIndicator.html  
+
+
+## Spring Acutator
 
 Przydatne linki:  
 https://start.spring.io/  
