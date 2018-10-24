@@ -91,7 +91,7 @@ mvn eclipse:eclipse
 
 5. Zaimportować projekt demo1 do Eclipse
 
-Wybra katalog C:\springboot\eclipse-workspace\demo1  
+Wybrać katalog C:\springboot\eclipse-workspace\demo1  
 ![](/images/import1.png)  
 ![](/images/import2.png)  
 ![](/images/import3.png)  
@@ -100,17 +100,9 @@ Z linii polecen przejść do C:\springboot\eclipse-workspace\demo1
 i wykonac polecenie  
 mvn spring-boot:run  
 
-    
-#1. pobierze https://github.com/demo102/demo/archive/master.zip  
-#2. rozpakuj demo-master.zip  
-#3. uruchom: mvn spring-boot:run  
-#4. zweryfikuj: curl http://localhost:7070/demo/hello  
-#5. posprzątaj: mvn clean  
-#6. przygotuj paczkę: mvn -DskipTests package  
 
 
-
-linki:
+Przydatne linki:  
 https://start.spring.io/
 https://mvnrepository.com/
 https://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
