@@ -42,6 +42,9 @@ Uruchomic bazę:
 > cd C:\springboot\db-derby-10.14.2.0-bin\bin  
 > startNetworkServer  
 
+SQL:  
+> ij> connect 'jdbc:derby://localhost:1527/demo';
+
 
 5. curl  
 https://curl.haxx.se/windows/dl-7.61.1_6/curl-7.61.1_6-win64-mingw.zip  
@@ -56,14 +59,16 @@ Windows 7 – Prawy klik My Computer i wybrac Properties > Advanced
 Windows 8 – Control Panel > System > Advanced System Settings  
 Windows 10 – Win+s Environment Variables i wybrac Edit the system environment variables   
 
-JAVA_HOME
+JAVA_HOME  
 C:\springboot\Java\jdk1.8.0_191
 
-M2_HOME
+M2_HOME  
 C:\springboot\apache-maven-3.5.4\bin
 
-MAVEN_HOME
+MAVEN_HOME  
 C:\springboot\apache-maven-3.5.4
+
+PATH=%JAVA_HOME%\bin;%MAVEN_HOME%\bin;%PATH%
 
 
 ![](/images/env1.png)  
@@ -73,13 +78,35 @@ C:\springboot\apache-maven-3.5.4
 
 
 
-## Spring Boot  
-1. pobierze https://github.com/demo102/demo/archive/master.zip  
-2. rozpakuj demo-master.zip  
-3. uruchom: mvn spring-boot:run  
-4. zweryfikuj: curl http://localhost:7070/demo/hello  
-5. posprzątaj: mvn clean  
-6. przygotuj paczkę: mvn -DskipTests package  
+## Spring Boot
+1. https://start.spring.io/  
+2. Wybrać Web
+![](/images/spring1.png)  
+
+3. Wygenerowany demo1.zip rozpakować do C:\springboot\eclipse-workspace
+
+4. Z linii polecen przejść do C:\springboot\eclipse-workspace\demo1
+i wykonac polecenie  
+mvn eclipse:eclipse
+
+5. Zaimportować projekt demo1 do Eclipse
+
+Wybra katalog C:\springboot\eclipse-workspace\demo1  
+![](/images/import1.png)  
+![](/images/import2.png)  
+![](/images/import3.png)  
+
+Z linii polecen przejść do C:\springboot\eclipse-workspace\demo1  
+i wykonac polecenie  
+mvn spring-boot:run  
+
+    
+#1. pobierze https://github.com/demo102/demo/archive/master.zip  
+#2. rozpakuj demo-master.zip  
+#3. uruchom: mvn spring-boot:run  
+#4. zweryfikuj: curl http://localhost:7070/demo/hello  
+#5. posprzątaj: mvn clean  
+#6. przygotuj paczkę: mvn -DskipTests package  
 
 
 
