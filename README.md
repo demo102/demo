@@ -103,6 +103,6 @@ mvn spring-boot:run
 
 
 Przydatne linki:  
-https://start.spring.io/
-https://mvnrepository.com/
-https://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+https://start.spring.io/  
+https://mvnrepository.com/  
+https://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html  
