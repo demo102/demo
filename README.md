@@ -101,8 +101,17 @@ i wykonac polecenie
 mvn spring-boot:run  
 
 
+## Spring Acutator
+```xml
+	<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+	</dependency>
+```
 
 Przydatne linki:  
 https://start.spring.io/  
 https://mvnrepository.com/  
 https://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html  
+
+Alternatyw dla Tomcata: http://undertow.io/  
