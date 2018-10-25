@@ -6,6 +6,12 @@ Demo aplikacji Spring Boot
 ```
 curl -H "Content-Type: application/json" -X POST -d '{	"komunikat": "to jest test", "msg": "1"}' http://localhost:7060/post
 ```
+```
+mvn spring-boot:run
+mvn package
+java -jar demo-0.0.1-SNAPSHOT.jar
+mvn clean  
+```
 
 ## Prerekwizyty
 1. Utworzyć katalog  
