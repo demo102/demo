@@ -3,6 +3,10 @@
 
 Demo aplikacji Spring Boot
 
+```
+curl -H "Content-Type: application/json" -X POST -d '{	"komunikat": "to jest test", "msg": "1"}' http://localhost:7060/post
+```
+
 ## Prerekwizyty
 1. Utworzyć katalog  
 C:\springboot  
