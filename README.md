@@ -432,6 +432,44 @@ import org.springframework.test.web.servlet.MockMvc;
 
 > mvn -DskipTests spring-boot:run
 
+
+### Konspumpcja
+
+```java
+@Configurable
+@SpringBootApplication
+public class SchroniskoApplication {
+
+	@Bean
+	public RestTemplate restTemplate(RestTemplateBuilder builder) {
+		return builder.build();
+	}
+```
+
+PiesController:  
+```java
+@Autowired
+private RestTemplate restTemplate;
+
+```
+
+```java
+	ResponseEntity<String> helloRes = restTemplate.getForEntity("http://localhost:7060/hello", String.class);
+
+	ResponseEntity<String> helloRes = restTemplate.getForEntity("http://localhost:7060/hello", String.class);
+
+	LOG.trace(helloRes.getBody());
+	ObjectMapper mapper = new ObjectMapper();
+	JsonNode root = mapper.readTree(helloRes.getBody());
+		
+	LOG.trace("czas={}", root.path("czas"));
+
+
+```
+
+
+
+
 Przydatne linki:  
 https://start.spring.io/  
 https://mvnrepository.com/  
